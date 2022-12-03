@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="bag.jpg"/>
+
+
+  </head>
+  <body id="one">
+    <h1>this is page 1!</h1>
+    
+    <p><a href="two.html">Got to page two</a></p>
+    <p>Use the form below to make a Pizza. After you submit the Pizza, its name will appear in the list below.</p>
+    <!-- our list of pizza will be stored in local storage so that we can see it on multiple pages  -->
+    <p>Once you have made a few Pizzas, navigate to Page Two and click the button to see your Pizza list on that page.</p>
+
+    <form>
+      <fieldset>
+        <legend>this is the Pizza Form</legend>
+        <label>Name you new Pizza;
+          <input  name="pizzaInput"  required/>
+        </label>
+        <button type="submit">Submit your new Pizza</button>
+      </fieldset>
+    </form>
+
+
+    <h2>The Pizza List</h2>
+    <ul id="pizzaList"></ul>
+
+
+
+    <script src="js/app.js" ></script>
+    <script src="js/appOne.js" ></script>
+
+  </body>
+</html>
